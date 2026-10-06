@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tangkap sebanyak mungkin bintang dalam 30 detik. Game HTML, CSS, dan JavaScript sederhana.">
+  <title>Star Rush — Main & Belajar</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><a class="brand" href="./"><span>✦</span> ruangmain<span class="dot">.</span></a><span class="edition">GAME MINI / 001</span></header>
+    <section class="intro"><div class="eyebrow">SEDIKIT WAKTU, BANYAK KESERUAN</div><h1>Star <em>Rush.</em></h1><p>Satu bintang, satu poin. Seberapa cepat kamu bisa menangkapnya?</p></section>
+    <section class="game" aria-label="Game Star Rush">
+      <div class="dashboard"><div><span class="label">SKOR KAMU</span><strong id="score">00</strong></div><div><span class="label">SISA WAKTU</span><strong><span id="time">30</span><small> detik</small></strong></div><div><span class="label">REKOR PRIBADI</span><strong id="best">00</strong></div></div>
+      <div class="progress"><div id="progress"></div></div>
+      <div id="arena" class="arena">
+        <span class="orbit orbit-one" aria-hidden="true"></span><span class="orbit orbit-two" aria-hidden="true"></span>
+        <span class="decoration d1" aria-hidden="true">✧</span><span class="decoration d2" aria-hidden="true">✧</span><span class="decoration d3" aria-hidden="true">+</span>
+        <button id="star" class="star" aria-label="Tangkap bintang" hidden>★</button>
+        <div id="overlay" class="overlay"><div class="hero-star" aria-hidden="true">★</div><h2 id="message">Siap mengejar bintang?</h2><p id="summary">Kamu punya 30 detik. Buat setiap klik berarti.</p><button id="start" class="primary">Mulai bermain <span aria-hidden="true">↗</span></button><span class="hint">GRATIS MAIN · TANPA INSTALASI</span></div>
+        <span id="arena-note" class="arena-note">LANGIT KECILMU, REKOR BESARMU</span>
+      </div>
+      <div class="game-footer"><span><i></i> <span id="status" role="status">Menunggu petualanganmu</span></span><button id="reset" class="text-button" hidden>↻ Mulai ulang</button></div>
+    </section>
+    <section class="instructions" aria-label="Cara bermain"><div><span class="step">01</span><h3>Mulai permainan</h3><p>Tekan tombol mulai. Hitung mundur 30 detik langsung berjalan.</p></div><div><span class="step">02</span><h3>Tangkap bintangnya</h3><p>Klik atau sentuh bintang. Setiap tangkapan memindahkannya dan menambah 1 poin.</p></div><div><span class="step">03</span><h3>Pecahkan rekormu</h3><p>Kumpulkan poin sebelum waktu habis. Rekor tersimpan di browser ini.</p></div></section>
+    <footer><span>Dibuat untuk bermain. Dirancang untuk belajar.</span><span>HTML <b>+</b> CSS <b>+</b> JavaScript</span></footer>
+  </main>
+</body>
+</html>
